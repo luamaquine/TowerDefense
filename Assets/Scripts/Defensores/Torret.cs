@@ -7,7 +7,8 @@ public class Torret : MonoBehaviour
     
     private List<Transform> EnemyPosList;
     private bool EnemyDetected;
-
+    [SerializeField] private float ShootTime;
+    private float currentTime;
     [SerializeField] private float bulletSpeed;
     [SerializeField] private float damage;
     
@@ -18,25 +19,32 @@ public class Torret : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (EnemyDetected)
-        {
-            Shoot();
-        }
-        else
+        if (!EnemyDetected)
         {
             EnemyDetected = EnemyPosList.Count > 0;
         }
+        else
+        {
+            if (currentTime >= ShootTime)
+            {
+                Shoot();
+                currentTime = 0;
+            }
+            else
+            {
+                currentTime += Time.deltaTime;
+            }
+        }
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Enemy"))
         {
             EnemyPosList.Add(col.transform);
         }
     }
-
-    private void OnTriggerExit2D(Collider2D col)
+    void OnTriggerExit2D(Collider2D col)
     {
         if (col.CompareTag("Enemy"))
         {
@@ -46,8 +54,11 @@ public class Torret : MonoBehaviour
 
     private void Shoot()
     {
-        var bullet = Instantiate(Bullet, transform.position, Quaternion.identity);
-        var script = bullet.AddComponent<Bullet>();
-        script.SetBullet(EnemyPosList[0], bulletSpeed, damage);
+        if (EnemyPosList.Count > 0)
+        {
+            var bullet = Instantiate(Bullet, transform.position, Quaternion.identity);
+            var script = bullet.AddComponent<Bullet>();
+            script.SetBullet(EnemyPosList[0], bulletSpeed, damage);
+        }
     }
 }

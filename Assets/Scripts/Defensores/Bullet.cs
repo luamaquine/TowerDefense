@@ -26,6 +26,7 @@ public class Bullet : MonoBehaviour
         if (col.CompareTag("Enemy"))
         {
             col.gameObject.GetComponent<EnemyLife>().TakeDamage(damage);
+            Destroy(gameObject);
         }
     }
 }
