@@ -311,7 +311,7 @@ MonoBehaviour:
   - {fileID: 9171415641796836359, guid: b1ce89ed8cadb8a4bbcffff222433d79, type: 3}
   spawnPoint: {fileID: 1478104006}
   totalEnemies: 1
-  spawnInterval: 1
+  spawnInterval: 2
   waveInterval: 15
 --- !u!4 &292727085
 Transform:
