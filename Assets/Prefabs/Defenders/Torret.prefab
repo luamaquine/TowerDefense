@@ -115,6 +115,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 1755103746444725485, guid: 7874e39df607bc04f84615b1f44fa5d3, type: 3}
-  ShootTime: 0
+  ShootTime: 5
   bulletSpeed: 10
   damage: 5

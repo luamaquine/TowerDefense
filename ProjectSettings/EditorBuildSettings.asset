@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 4ef382eb261493244b607f32c26e6fac
+  - enabled: 1
+    path: Assets/Scenes/LoreInicio.unity
+    guid: ae4d788f0ff26464d8ceccb94d655676
+  - enabled: 1
+    path: Assets/Scenes/Test-Eduardo.unity
+    guid: 35ac1f5508776e944a6fcfeb9b2cb03e
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: fd7be2242c39ef042ab250c077fd0471
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: f126eb54b8986cb4ea4d27eb4cdd9064
   m_configObjects: {}

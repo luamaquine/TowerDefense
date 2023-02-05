@@ -17,5 +17,6 @@ public class EnemyLife : MonoBehaviour
     void Die(){
         //Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
+        GameController.coins = GameController.coins+10;
     }
 }
