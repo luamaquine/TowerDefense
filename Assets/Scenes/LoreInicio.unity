@@ -155,9 +155,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 336618530}
-  - {fileID: 1407543706}
   m_Father: {fileID: 257083573}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -288,6 +287,7 @@ RectTransform:
   m_LocalScale: {x: 1.2828, y: 1.2828, z: 1.2828}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1407543706}
   - {fileID: 2785505}
   m_Father: {fileID: 1192238451}
   m_RootOrder: 0
@@ -910,16 +910,16 @@ RectTransform:
   m_GameObject: {fileID: 1407543705}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.50140464, y: 0.50140464, z: 0.50140464}
+  m_LocalScale: {x: 0.5014047, y: 0.5014047, z: 0.5014047}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2785505}
-  m_RootOrder: 1
+  m_Father: {fileID: 257083573}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 10, y: 82.03}
-  m_SizeDelta: {x: 902.31, y: 195.44}
+  m_AnchoredPosition: {x: 10, y: -98.97}
+  m_SizeDelta: {x: 423.31, y: -115.404236}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1407543707
 MonoBehaviour:
@@ -943,10 +943,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b006c78bd7814f54aa78c94d718d101c, type: 3}
-    m_FontSize: 34
+    m_FontSize: 24
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -954,11 +954,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "A muito tempo atr\xE1s em uma floresta misteriosa A muito tempo atr\xE1s
-    em uma floresta misteriosa A muito tempo atr\xE1s em uma floresta misteriosa
-    A muito tempo atr\xE1s em uma floresta misteriosa A muito tempo atr\xE1s em uma
-    floresta misteriosa A muito tempo atr\xE1s em uma floresta misteriosa A muito
-    tempo atr\xE1s em uma floresta misteriosa"
+  m_Text: "A Gardenix, planta ancestral m\xE1gica que deu origem a todas as outras
+    plantas, pressentiu um mal iminente. Monstros Elementais de origem desconhecida
+    come\xE7aram a atacar suas florestas. Gardenix ent\xE3o utilizou uma magia que
+    n\xE3o usava a muito tempo, o poder de cria\xE7\xE3o. Decidiu criar guerreiros
+    poderosos capazes de enfrentar os elementais, com suas ra\xEDzes m\xE1gicas,
+    modelou os primeiros Sid`s, pequenos e fofos guerreiros para o combate contra
+    o inimigo. Tamanho aparentemente n\xE3o \xE9 documento pois esses baixinhos d\xE3o
+    conta do recado, mas precisam da sua ajuda para coorden\xE1-los na batalha, ajude-os
+    a proteger seu lar e defender sua fam\xEDlia."
 --- !u!222 &1407543708
 CanvasRenderer:
   m_ObjectHideFlags: 0
