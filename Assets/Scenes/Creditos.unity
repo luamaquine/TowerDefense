@@ -1012,7 +1012,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 10, y: 5}
+  m_AnchoredPosition: {x: -0, y: 5}
   m_SizeDelta: {x: 423.31, y: 68.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1407543707
@@ -1052,7 +1052,7 @@ MonoBehaviour:
     Cristine @Erykacris_\r\nJhenifer Christ @jjheniferchrist\r\nJulieanne Barroncas
     @julieanne-barroncas-b46100ab\r\nEvandro Garrido @evandro-garrido\r\nLu\xE3 Maquin\xE9
     @Lu\xE3maquin\xE9\r\nRoberto Junio @Robjunio\r\nMatheus Fa\xE7anha @imatheusfacanha\r\nLa\xEDs
-    Dib @La\xEDs Dib\nArthur Lucas  @oarthursantos"
+    Dib @La\xEDs Dib\nArthur Lucas  @oarthursantos\nBruna Sotero @brunasotero"
 --- !u!222 &1407543708
 CanvasRenderer:
   m_ObjectHideFlags: 0
