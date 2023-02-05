@@ -140,7 +140,7 @@ MonoBehaviour:
   Bullet: {fileID: 1755103746444725485, guid: 7874e39df607bc04f84615b1f44fa5d3, type: 3}
   ShootTime: 1
   bulletSpeed: 5
-  damage: 15
+  damage: 9
 --- !u!95 &2550677160968547905
 Animator:
   serializedVersion: 4

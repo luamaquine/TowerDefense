@@ -138,9 +138,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 1755103746444725485, guid: 7874e39df607bc04f84615b1f44fa5d3, type: 3}
-  ShootTime: 0.4
+  ShootTime: 0.6
   bulletSpeed: 8
-  damage: 5
+  damage: 3
 --- !u!95 &8562339468801774133
 Animator:
   serializedVersion: 4
