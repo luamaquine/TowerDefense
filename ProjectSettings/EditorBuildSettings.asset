@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/LoreInicio.unity
     guid: ae4d788f0ff26464d8ceccb94d655676
   - enabled: 1
-    path: Assets/Scenes/Test-Eduardo.unity
+    path: Assets/Scenes/Test-Novo-sistema-de-horda.unity
     guid: 35ac1f5508776e944a6fcfeb9b2cb03e
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
