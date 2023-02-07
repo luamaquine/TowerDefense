@@ -104,6 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 40
   deathEffect: {fileID: 0}
+  isAlive: 1
 --- !u!114 &1735021149302083559
 MonoBehaviour:
   m_ObjectHideFlags: 0
