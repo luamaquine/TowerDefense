@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Generic.List;
+using System.Configuration.Assemblies;
 
 public class HordeManager : MonoBehaviour
 {
@@ -9,15 +9,13 @@ public class HordeManager : MonoBehaviour
     public List<int> hordeEnemies; // Lista de números de inimigos para cada horda
 
     private int currentHorde = 0; // Índice da horda atual
-    private bool hordeActive = false; // Variável para verificar se a horda está ativa
+    private bool hordeActive; // Variável para verificar se a horda está ativa
     public Transform spawnPoint; // Transform do spawn point
-    public EnemyLife enemyLife; // Script de vida do inimigo
 
     void Start()
     {
         StartHorde(); // Inicia a primeira horda ao iniciar o jogo
     }
-
     void Update()
     {
         // Verifica se a horda está ativa
@@ -28,7 +26,7 @@ public class HordeManager : MonoBehaviour
             // Conta o número de inimigos vivos
             foreach (GameObject enemy in GameObject.FindGameObjectsWithTag("Enemy"))
             {
-                if (enemy.GetComponent<enemyLife>().isAlive)
+                if (enemy.GetComponent<EnemyLife>().isAlive)
                 {
                     enemiesAlive++;
                 }

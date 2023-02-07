@@ -6,11 +6,16 @@ public class EnemyLife : MonoBehaviour
 {
     public float health;
     public GameObject deathEffect;
+    public bool isAlive;
 
     public void TakeDamage(float amount){
         health -= amount;
         if (health <= 0f){
             Die();
+        }
+        else
+        {
+            isAlive = true;
         }
     }
 
