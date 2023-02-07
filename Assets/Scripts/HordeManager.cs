@@ -10,6 +10,7 @@ public class HordeManager : MonoBehaviour
     [SerializeField] private GameObject _enemy1Prefab;
     [SerializeField] private GameObject _enemy2Prefab;
     [SerializeField] private GameObject _enemy3Prefab;
+    [SerializeField] private GameObject _enemy4Prefab;
 
     private List<GameObject> hordePrefabs; // Lista de prefabs de inimigos para cada horda
 
@@ -62,6 +63,10 @@ public class HordeManager : MonoBehaviour
                 if (currentHorde < hordePrefabs.Count)
                 {
                     StartHorde();
+                }  
+                else
+                {
+                    Debug.Log("Você venceu!");
                 }
             }
         }
@@ -83,7 +88,7 @@ public class HordeManager : MonoBehaviour
             {
                 prefab = _enemy1Prefab;
             }
-            else if (currentHorde < 4)
+            else if (currentHorde < 5)
             {
                 prefab = Random.Range(0, 100) > 49 ? _enemy1Prefab : _enemy2Prefab;
             }
@@ -95,7 +100,6 @@ public class HordeManager : MonoBehaviour
                 var obj = Instantiate(prefab, spawnPoint.position, quaternion.identity);
                 hordePrefabs.Add(obj);
                 yield return new WaitForSeconds(spawnInterval);
-                
             }
         }
     }
