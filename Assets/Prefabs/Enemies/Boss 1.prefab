@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 581007424215206897}
   - component: {fileID: 531430296}
   m_Layer: 6
-  m_Name: Enemy3
+  m_Name: Boss 1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 9171415641796836359}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d784c78eae7e6449f1b2d301c592fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 160
+  health: 500
   deathEffect: {fileID: 0}
   isAlive: 1
 --- !u!114 &9171415641796836356
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db8d3a94e575270409cdb90e43fb6af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 0.4
 --- !u!61 &1822680375645227821
 BoxCollider2D:
   m_ObjectHideFlags: 0
